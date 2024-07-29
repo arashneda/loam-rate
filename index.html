@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>loam rate</title>
+</head>
+<body>
+    <div class="container">
+        <h2>loam calculator</h2>
+        <label for="loam-amount">loam amount $</label>
+        <input onchange="calculetloam()" type="number" id="loam-amount" min="1" max="500000" value="10000">
+        <label for="interestRate">interest rate $</label>
+        <input onchange="calculetloam()" type="number" id="interestRate" min="0" max="100" value="10">
+        <label for="mounthPay">mount to pay</label>
+        <input onchange="calculetloam()" type="number" id="loam-mounthPay"  min="6" max="48" value="12">
+        <h3>mounthly payment: <span>5522$</span></h3>
+
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>
